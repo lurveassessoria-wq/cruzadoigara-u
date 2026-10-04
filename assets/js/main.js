@@ -48,7 +48,8 @@
 
   const maps = $("[data-maps]");
   if (maps) {
-    const query = [C.endereco, C.cidade].filter(Boolean).join(", ");
+    // "Rua X, 1 — Centro" → "Rua X, 1, Centro" (o Maps entende melhor sem travessões)
+    const query = [C.endereco, C.cidade].filter(Boolean).join(", ").replace(/\s*[—–]\s*/g, ", ");
     maps.href = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(query)}`;
   }
 

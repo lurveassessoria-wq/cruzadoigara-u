@@ -7,8 +7,8 @@ window.CRUZADO = {
   // Como o número aparece no site
   whatsappLabel: "(14) 92004-9503",
 
-  endereco: "Rua Exemplo, 123 — Centro",
-  cidade: "Sua cidade — UF",
+  endereco: "Pereira de Rezende, 481 — Centro",
+  cidade: "Igaraçu do Tietê — SP",
 
   // [dia, horário]
   horarios: [
@@ -18,7 +18,7 @@ window.CRUZADO = {
   ],
 
   // Usuário do Instagram sem @ (deixe vazio para esconder)
-  instagram: "",
+  instagram: "cruzadocasadecarnes.ig",
 
   // Mensagem padrão dos botões de pedido
   mensagemPadrao: "Olá, Casa de Carnes Cruzado! Gostaria de fazer um pedido.",
