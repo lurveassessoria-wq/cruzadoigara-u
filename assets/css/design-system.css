@@ -1,0 +1,327 @@
+/* ==========================================================================
+   Página do Design System
+   ========================================================================== */
+.sprite {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.ds-header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(13, 13, 13, 0.8);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+.ds-header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-3);
+  height: 68px;
+}
+.ds-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+}
+.ds-brand svg {
+  width: 36px;
+  height: 36px;
+}
+.ds-brand strong {
+  display: block;
+  font-size: 1rem;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  line-height: 1;
+}
+.ds-brand small {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--fs-caption);
+  font-weight: 500;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--c-ouro);
+}
+
+.ds-hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(64px, 10vw, 120px) 0 clamp(48px, 6vw, 72px);
+}
+.ds-hero::before {
+  content: "";
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(225, 13, 13, 0.4), transparent 62%);
+  filter: blur(60px);
+}
+.ds-hero .container {
+  position: relative;
+  display: grid;
+  gap: var(--sp-3);
+}
+.ds-hero p {
+  max-width: 640px;
+}
+
+.ds-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-3);
+}
+.ds-nav a {
+  text-decoration: none;
+}
+
+.ds-section {
+  padding: clamp(48px, 7vw, 88px) 0;
+  border-top: 1px solid var(--c-grafite-800);
+}
+.ds-section-head {
+  display: grid;
+  gap: var(--sp-2);
+  margin-bottom: var(--sp-5);
+}
+.ds-section-head p {
+  max-width: 620px;
+  color: var(--c-texto-2);
+}
+.ds-group-title {
+  margin: var(--sp-5) 0 var(--sp-3);
+}
+.ds-group-title:first-of-type {
+  margin-top: 0;
+}
+
+/* Cores */
+.ds-swatches {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: var(--sp-3);
+}
+.ds-swatch {
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid var(--c-grafite-700);
+  border-radius: var(--r-lg);
+  background: var(--c-grafite-950);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.4s var(--ease-out), border-color 0.3s, box-shadow 0.4s;
+}
+.ds-swatch:hover {
+  transform: translateY(-4px);
+  border-color: var(--c-grafite-500);
+  box-shadow: var(--s-md);
+}
+.ds-swatch-color {
+  display: block;
+  height: 112px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+.ds-swatch-info {
+  display: grid;
+  gap: 2px;
+  padding: var(--sp-3);
+}
+.ds-swatch-info strong {
+  font-size: 0.9375rem;
+  font-weight: 700;
+}
+.ds-swatch-info code,
+.ds-code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  color: var(--c-texto-2);
+}
+.ds-swatch--lg .ds-swatch-color {
+  height: 168px;
+}
+
+/* Tipografia */
+.ds-type {
+  display: grid;
+}
+.ds-type-row {
+  display: grid;
+  grid-template-columns: 200px minmax(0, 1fr);
+  align-items: baseline;
+  gap: var(--sp-4);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--c-grafite-800);
+}
+.ds-type-meta {
+  display: grid;
+  gap: 4px;
+}
+.ds-type-meta strong {
+  font-size: 0.875rem;
+  font-weight: 700;
+}
+.ds-type-sample {
+  overflow-wrap: anywhere;
+}
+
+/* Matrizes de componentes */
+.ds-panel {
+  padding: clamp(20px, 3vw, 32px);
+  border: 1px solid var(--c-grafite-700);
+  border-radius: var(--r-xl);
+  background:
+    radial-gradient(circle at 100% 0%, rgba(225, 13, 13, 0.08), transparent 40%),
+    var(--c-grafite-950);
+}
+.ds-btn-grid {
+  display: grid;
+  grid-template-columns: 120px repeat(4, auto);
+  align-items: center;
+  justify-content: start;
+  gap: var(--sp-3) var(--sp-4);
+  overflow-x: auto;
+}
+.ds-btn-grid .t-caption {
+  white-space: nowrap;
+}
+.ds-inputs {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--sp-4);
+}
+
+.ds-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  align-items: start;
+  gap: var(--sp-4);
+}
+.ds-cards .feature {
+  min-height: 0;
+}
+.ds-card-label {
+  margin-bottom: var(--sp-2);
+}
+
+/* Raios, sombras, espaçamento */
+.ds-tokens {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: var(--sp-4);
+}
+.ds-token {
+  display: grid;
+  justify-items: center;
+  gap: var(--sp-2);
+  text-align: center;
+}
+.ds-token strong {
+  font-size: 0.875rem;
+}
+.ds-radius-box {
+  width: 96px;
+  height: 96px;
+  border: 1.5px solid var(--c-ouro);
+  background: linear-gradient(145deg, rgba(224, 206, 37, 0.14), rgba(143, 110, 0, 0.04));
+}
+.ds-shadow-box {
+  width: 100%;
+  max-width: 180px;
+  height: 110px;
+  border-radius: var(--r-lg);
+  background: var(--c-grafite-800);
+}
+.ds-shadows {
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: var(--sp-6) var(--sp-4);
+  padding: var(--sp-4);
+}
+
+.ds-spacing {
+  display: grid;
+  gap: var(--sp-2);
+}
+.ds-space-row {
+  display: grid;
+  grid-template-columns: 90px 70px minmax(0, 1fr);
+  align-items: center;
+  gap: var(--sp-3);
+}
+.ds-space-bar {
+  height: 16px;
+  border-radius: var(--r-xs);
+  background: var(--g-fogo);
+  box-shadow: 0 0 12px rgba(225, 13, 13, 0.4);
+}
+
+.ds-gradients {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: var(--sp-3);
+}
+.ds-gradient {
+  display: grid;
+  align-content: end;
+  gap: 2px;
+  height: 140px;
+  padding: var(--sp-3);
+  border-radius: var(--r-lg);
+}
+.ds-gradient strong {
+  font-size: 0.9375rem;
+}
+.ds-gradient code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.75rem;
+  opacity: 0.8;
+}
+
+.ds-toast {
+  position: fixed;
+  left: 50%;
+  bottom: 24px;
+  z-index: 50;
+  padding: 12px 20px;
+  border: 1px solid rgba(224, 206, 37, 0.4);
+  border-radius: var(--r-full);
+  background: var(--c-grafite-900);
+  box-shadow: var(--s-gold);
+  font-size: 0.875rem;
+  font-weight: 600;
+  opacity: 0;
+  transform: translate(-50%, 16px);
+  transition: opacity 0.3s, transform 0.4s var(--ease-out);
+  pointer-events: none;
+}
+.ds-toast.is-visible {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
+.ds-footer {
+  padding: var(--sp-6) 0;
+  border-top: 1px solid var(--c-grafite-800);
+  color: var(--c-texto-3);
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 700px) {
+  .ds-type-row {
+    grid-template-columns: 1fr;
+    gap: var(--sp-2);
+  }
+  .ds-space-row {
+    grid-template-columns: 70px 56px minmax(0, 1fr);
+  }
+}

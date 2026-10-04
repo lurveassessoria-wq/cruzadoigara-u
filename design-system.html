@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Design System — Casa de Carnes Cruzado</title>
+  <meta name="description" content="Design System da Casa de Carnes Cruzado: cores, tipografia, botões, inputs, cards, raios, sombras e espaçamento.">
+  <meta name="theme-color" content="#0D0D0D">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <link rel="stylesheet" href="assets/css/design-system.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-blade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F6E875"/>
+        <stop offset=".45" stop-color="#E0CE25"/>
+        <stop offset="1" stop-color="#8F6E00"/>
+      </linearGradient>
+      <linearGradient id="g-handle" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FF2A2A"/>
+        <stop offset="1" stop-color="#8A0505"/>
+      </linearGradient>
+      <g id="knife">
+        <path d="M28.5 35V14c0-4 1.5-6 3.5-7 3 4 4.5 13 4.5 28Z" fill="url(#g-blade)"/>
+        <rect x="27.5" y="34.5" width="10" height="3.5" rx="1" fill="#8F6E00"/>
+        <rect x="28.5" y="38" width="8" height="17" rx="2.5" fill="url(#g-handle)"/>
+        <circle cx="32.5" cy="43" r="1" fill="#0D0D0D"/>
+        <circle cx="32.5" cy="50" r="1" fill="#0D0D0D"/>
+      </g>
+    </defs>
+
+    <symbol id="logo-mark" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30.5" fill="none" stroke="url(#g-blade)" stroke-width="1.5"/>
+      <use href="#knife" transform="rotate(42 32 32)"/>
+      <use href="#knife" transform="rotate(-42 32 32) translate(64 0) scale(-1 1)"/>
+    </symbol>
+
+    <!-- Ilustrações dos cortes (traço dourado) -->
+    <symbol id="art-steak" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 56c0-20 30-32 64-30 36 2 66 14 68 40 2 24-20 46-54 48-22 1-32-8-48-8-22 0-34-14-32-30 0-8 2-14 2-20Z"/>
+        <path d="M40 56c0-20 30-32 64-30 36 2 66 14 68 40 2 24-20 46-54 48-22 1-32-8-48-8-22 0-34-14-32-30 0-8 2-14 2-20Z" transform="translate(105 70) scale(.84) translate(-105 -70)" opacity=".55"/>
+        <path d="M68 58c6 4 12 6 20 4M112 58c4 6 10 10 18 10M80 80c8 2 14 8 18 14M126 84c4-4 10-6 16-4M60 74c2 4 6 8 10 10" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-ribeye" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 74c-4-30 26-50 62-50 40 0 66 20 64 50-2 28-28 44-62 44-36 0-60-16-64-44Z"/>
+        <path d="M70 72c0-16 16-26 34-26 20 0 34 12 32 28-2 15-16 24-34 24-18 0-32-10-32-26Z" opacity=".75"/>
+        <path d="M52 92c10 10 30 16 52 15M150 58c4 6 6 12 5 20" opacity=".5"/>
+        <path d="M86 62c4 6 10 8 18 6M98 82c6-2 12 2 16 6M116 60c2 4 6 6 10 6" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-tbone" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M28 72c0-28 32-44 72-44s74 16 74 46c0 28-28 44-66 44-40 0-80-16-80-46Z"/>
+        <path d="M46 42c26-10 84-12 112-1l-3 8c-28-9-80-8-106 1Z" fill="currentColor" fill-opacity=".16"/>
+        <path d="M114 43h8l-3 74h-8Z" fill="currentColor" fill-opacity=".16"/>
+        <path d="M50 70c6 2 12 6 16 12M72 94c6-2 12 0 16 4M80 58c6 4 12 4 18 2M134 64c4 4 10 6 16 6M138 92c4-2 8-2 12 0" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-ribs" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="26" y="44" width="148" height="56" rx="18"/>
+        <path d="M54 34v76M84 34v76M114 34v76M144 34v76" opacity=".7"/>
+        <circle cx="54" cy="30" r="4"/><circle cx="84" cy="30" r="4"/><circle cx="114" cy="30" r="4"/><circle cx="144" cy="30" r="4"/>
+        <circle cx="54" cy="114" r="4"/><circle cx="84" cy="114" r="4"/><circle cx="114" cy="114" r="4"/><circle cx="144" cy="114" r="4"/>
+        <path d="M34 60c12-6 24 6 36 0M160 84c-8 4-16-4-24 0" opacity=".4"/>
+      </g>
+    </symbol>
+    <symbol id="art-tomahawk" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 80c-2-28 24-48 58-48 32 0 50 18 50 40s-22 38-54 38c-30 0-52-10-54-30Z"/>
+        <path d="M30 74c8-20 26-32 50-32" opacity=".55"/>
+        <rect x="120" y="62" width="56" height="12" rx="6" fill="currentColor" fill-opacity=".14"/>
+        <circle cx="180" cy="61" r="7"/><circle cx="180" cy="75" r="7"/>
+        <path d="M46 86c6 2 12 6 14 12M78 62c6 4 12 6 20 4M86 92c4-4 10-6 16-4" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-layers" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="28" y="36" width="144" height="72" rx="12"/>
+        <path d="M28 56c22-8 42 8 72 0s50 8 72 0M28 76c22 8 42-8 72 0s50-8 72 0M28 92c22-6 42 6 72 0s50 6 72 0" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="art-sausage" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="16" y="72" width="60" height="26" rx="13" transform="rotate(-20 46 85)"/>
+        <rect x="70" y="56" width="60" height="26" rx="13" transform="rotate(2 100 69)"/>
+        <rect x="124" y="62" width="60" height="26" rx="13" transform="rotate(24 154 75)"/>
+        <path d="M74 74l-4 2M128 70l-4-2" stroke-width="3"/>
+        <path d="M34 84c6-3 12-5 18-6M88 66h18M144 72c6 2 11 5 16 9" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-drumstick" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M56 48c16-24 64-26 74 4 6 20-4 34-14 46-12 2-38 0-54-14-14-12-14-24-6-36Z"/>
+        <path d="M116 98l24 18" stroke-width="9" opacity=".25"/>
+        <path d="M116 98l24 18"/>
+        <circle cx="143" cy="124" r="6"/><circle cx="149" cy="113" r="6"/>
+        <path d="M70 54c10-10 28-12 42-6M72 78c8 6 18 8 28 8" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-burger" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 70c0-26 26-42 60-42s60 16 60 42Z"/>
+        <path d="M36 80q8-6 16 0t16 0 16 0 16 0 16 0 16 0 16 0 16 0"/>
+        <rect x="38" y="86" width="124" height="16" rx="8" fill="currentColor" fill-opacity=".14"/>
+        <path d="M40 108h120v4a12 12 0 0 1-12 12H52a12 12 0 0 1-12-12Z"/>
+        <path d="M76 46l4-2M98 40l4 1M120 48l3 2M88 56l3-1M110 58l4 1" opacity=".6"/>
+      </g>
+    </symbol>
+
+    <!-- Ícones (24px) -->
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5l1.2-1.2 2 .8-.4 1.8c-4.4.4-8.3-3.5-7.9-7.9l1.8-.4.8 2Z" fill="currentColor"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-knife" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 3.5 9 15l-2.5-2.5C10.5 8.5 15 4.5 20.5 3.5Z"/><path d="m8 14-4.6 4.6a1.6 1.6 0 0 0 2.3 2.3L10.2 16.4"/></g></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4.4 0 7-3 7-7 0-4.5-3.5-6.5-4.5-10-1.5 2-2.5 3-4 3.5C10.5 6 9.5 4 8 2.5 8 7 5 9 5 15c0 4 2.6 7 7 7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3V16h-7"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <header class="ds-header">
+    <div class="container">
+      <a class="ds-brand" href="index.html">
+        <svg aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span><strong>CRUZADO</strong><small>Design System</small></span>
+      </a>
+      <a class="btn btn-outline btn-sm" href="index.html">
+        Ver o site
+        <svg class="btn-icon btn-icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <section class="ds-hero">
+      <div class="container">
+        <span class="eyebrow"><span class="eyebrow-line"></span>Identidade visual · v1.0</span>
+        <h1 class="t-display">Design <span class="text-fire">System</span></h1>
+        <p class="t-lead">Os blocos que constroem a Casa de Carnes Cruzado: preto profundo, ouro e o vermelho que chama a atenção. Clique em uma cor para copiar o código.</p>
+        <nav class="ds-nav" aria-label="Seções">
+          <a class="chip" href="#cores">Cores</a>
+          <a class="chip" href="#tipografia">Tipografia</a>
+          <a class="chip" href="#botoes">Botões</a>
+          <a class="chip" href="#inputs">Inputs</a>
+          <a class="chip" href="#cards">Cards</a>
+          <a class="chip" href="#estetica">Raios, sombras e espaço</a>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Cores -->
+    <section class="ds-section" id="cores">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">01 · Cores</span>
+          <h2 class="t-h1">Paleta em 3 níveis</h2>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Primárias</h3>
+        <div class="ds-swatches">
+          <button class="ds-swatch ds-swatch--lg" type="button" data-copy="#0D0D0D"><span class="ds-swatch-color" style="background:#0D0D0D"></span><span class="ds-swatch-info"><strong>Preto Cruzado</strong><code>#0D0D0D · --c-preto</code></span></button>
+          <button class="ds-swatch ds-swatch--lg" type="button" data-copy="#8F6E00"><span class="ds-swatch-color" style="background:#8F6E00"></span><span class="ds-swatch-info"><strong>Ouro Escuro</strong><code>#8F6E00 · --c-ouro-escuro</code></span></button>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Secundárias</h3>
+        <div class="ds-swatches">
+          <button class="ds-swatch ds-swatch--lg" type="button" data-copy="#E0CE25"><span class="ds-swatch-color" style="background:#E0CE25"></span><span class="ds-swatch-info"><strong>Ouro Brilhante</strong><code>#E0CE25 · --c-ouro</code></span></button>
+          <button class="ds-swatch ds-swatch--lg" type="button" data-copy="#E10D0D"><span class="ds-swatch-color" style="background:#E10D0D"></span><span class="ds-swatch-info"><strong>Vermelho Cruzado</strong><code>#E10D0D · --c-vermelho</code></span></button>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Suporte</h3>
+        <div class="ds-swatches">
+          <button class="ds-swatch" type="button" data-copy="#121212"><span class="ds-swatch-color" style="background:#121212"></span><span class="ds-swatch-info"><strong>Grafite 950</strong><code>#121212</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#171717"><span class="ds-swatch-color" style="background:#171717"></span><span class="ds-swatch-info"><strong>Grafite 900</strong><code>#171717</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#1F1F1F"><span class="ds-swatch-color" style="background:#1F1F1F"></span><span class="ds-swatch-info"><strong>Grafite 800</strong><code>#1F1F1F</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#2A2A2A"><span class="ds-swatch-color" style="background:#2A2A2A"></span><span class="ds-swatch-info"><strong>Grafite 700</strong><code>#2A2A2A</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#3A3A3A"><span class="ds-swatch-color" style="background:#3A3A3A"></span><span class="ds-swatch-info"><strong>Grafite 600</strong><code>#3A3A3A</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#555555"><span class="ds-swatch-color" style="background:#555555"></span><span class="ds-swatch-info"><strong>Grafite 500</strong><code>#555555</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#F5F2EA"><span class="ds-swatch-color" style="background:#F5F2EA"></span><span class="ds-swatch-info"><strong>Texto</strong><code>#F5F2EA · --c-texto</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#A8A49A"><span class="ds-swatch-color" style="background:#A8A49A"></span><span class="ds-swatch-info"><strong>Texto secundário</strong><code>#A8A49A · --c-texto-2</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#FF2323"><span class="ds-swatch-color" style="background:#FF2323"></span><span class="ds-swatch-info"><strong>Vermelho hover</strong><code>#FF2323</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#8A0505"><span class="ds-swatch-color" style="background:#8A0505"></span><span class="ds-swatch-info"><strong>Vermelho profundo</strong><code>#8A0505</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#3DBA6F"><span class="ds-swatch-color" style="background:#3DBA6F"></span><span class="ds-swatch-info"><strong>Sucesso</strong><code>#3DBA6F</code></span></button>
+          <button class="ds-swatch" type="button" data-copy="#FF3B3B"><span class="ds-swatch-color" style="background:#FF3B3B"></span><span class="ds-swatch-info"><strong>Erro</strong><code>#FF3B3B</code></span></button>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Degradês</h3>
+        <div class="ds-gradients">
+          <div class="ds-gradient" style="background:var(--g-ouro);color:var(--c-preto)"><strong>Ouro</strong><code>--g-ouro</code></div>
+          <div class="ds-gradient" style="background:var(--g-vermelho)"><strong>Vermelho</strong><code>--g-vermelho</code></div>
+          <div class="ds-gradient" style="background:var(--g-fogo)"><strong>Fogo</strong><code>--g-fogo</code></div>
+          <div class="ds-gradient neon" style="background:var(--c-grafite-950)"><strong>Borda neon</strong><code>.neon</code></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tipografia -->
+    <section class="ds-section" id="tipografia">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">02 · Tipografia</span>
+          <h2 class="t-h1">Montserrat em 7 níveis</h2>
+        </div>
+        <div class="ds-type">
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Display</strong><span class="ds-code">900 · 54px · .t-display</span></div><p class="t-display ds-type-sample">Corte de mestre</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Heading 1</strong><span class="ds-code">800 · 40px · .t-h1</span></div><p class="t-h1 ds-type-sample">Qualidade que se vê no corte</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Heading 2</strong><span class="ds-code">800 · 32px · .t-h2</span></div><p class="t-h2 ds-type-sample">Os cortes da casa</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Heading 3</strong><span class="ds-code">700 · 24px · .t-h3</span></div><p class="t-h3 ds-type-sample">Picanha maturada</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Lead</strong><span class="ds-code">500 · 18px · .t-lead</span></div><p class="t-lead ds-type-sample">Seleção premium de carnes, porcionadas do seu jeito e prontas para a brasa.</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Body</strong><span class="ds-code">400 · 16px · .t-body</span></div><p class="t-body ds-type-sample">Peças escolhidas uma a uma, olhando marmoreio, cor e frescor. Espessura, peso e porcionamento do jeito que você pedir.</p></div>
+          <div class="ds-type-row"><div class="ds-type-meta"><strong>Caption</strong><span class="ds-code">500 · 11px · .t-caption</span></div><p class="t-caption ds-type-sample">Bovino · Grelha · Corte na hora</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Botões -->
+    <section class="ds-section" id="botoes">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">03 · Botões</span>
+          <h2 class="t-h1">5 variantes × 3 tamanhos</h2>
+          <p>Passe o mouse para ver o brilho, o glow e o efeito de clique.</p>
+        </div>
+        <div class="ds-panel">
+          <div class="ds-btn-grid">
+            <span></span><span class="t-caption">Small</span><span class="t-caption">Medium</span><span class="t-caption">Large</span><span class="t-caption">Desabilitado</span>
+
+            <span class="t-caption">Primary</span>
+            <button class="btn btn-primary btn-sm" type="button">Pedir</button>
+            <button class="btn btn-primary" type="button">Fazer pedido</button>
+            <button class="btn btn-primary btn-lg" type="button">Fazer pedido <svg class="btn-icon btn-icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button class="btn btn-primary" type="button" disabled>Fazer pedido</button>
+
+            <span class="t-caption">Gold</span>
+            <button class="btn btn-gold btn-sm" type="button">Kit</button>
+            <button class="btn btn-gold" type="button">Montar kit</button>
+            <button class="btn btn-gold btn-lg" type="button">Montar meu kit <svg class="btn-icon btn-icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg></button>
+            <button class="btn btn-gold" type="button" disabled>Montar kit</button>
+
+            <span class="t-caption">Outline</span>
+            <button class="btn btn-outline btn-sm" type="button">Ver</button>
+            <button class="btn btn-outline" type="button">Ver vitrine</button>
+            <button class="btn btn-outline btn-lg" type="button">Ver a vitrine</button>
+            <button class="btn btn-outline" type="button" disabled>Ver vitrine</button>
+
+            <span class="t-caption">Ghost</span>
+            <button class="btn btn-ghost btn-sm" type="button">Voltar</button>
+            <button class="btn btn-ghost" type="button">Saiba mais</button>
+            <button class="btn btn-ghost btn-lg" type="button">Saiba mais</button>
+            <button class="btn btn-ghost" type="button" disabled>Saiba mais</button>
+
+            <span class="t-caption">Danger</span>
+            <button class="btn btn-danger btn-sm" type="button">Remover</button>
+            <button class="btn btn-danger" type="button">Cancelar pedido</button>
+            <button class="btn btn-danger btn-lg" type="button">Cancelar pedido</button>
+            <button class="btn btn-danger" type="button" disabled>Cancelar</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Inputs -->
+    <section class="ds-section" id="inputs">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">04 · Inputs</span>
+          <h2 class="t-h1">Campos e estados</h2>
+        </div>
+        <div class="ds-panel ds-inputs">
+          <div class="field">
+            <label class="field-label" for="ds-1">Padrão</label>
+            <input class="input" id="ds-1" placeholder="Como podemos te chamar?">
+            <span class="field-msg">Texto de apoio.</span>
+          </div>
+          <div class="field is-focus">
+            <label class="field-label" for="ds-2">Foco</label>
+            <input class="input" id="ds-2" value="Maria Silva">
+            <span class="field-msg">Borda e glow dourados.</span>
+          </div>
+          <div class="field is-error">
+            <label class="field-label" for="ds-3">Erro</label>
+            <input class="input" id="ds-3" value="(11) 9999" aria-invalid="true">
+            <span class="field-msg">Informe um WhatsApp válido com DDD.</span>
+          </div>
+          <div class="field is-success">
+            <label class="field-label" for="ds-4">Sucesso</label>
+            <input class="input" id="ds-4" value="(11) 99999-8888">
+            <span class="field-msg">Tudo certo.</span>
+          </div>
+          <div class="field">
+            <label class="field-label" for="ds-5">Select</label>
+            <select class="select" id="ds-5">
+              <option>Retirada na loja</option>
+              <option>Entrega</option>
+              <option>Encomenda para evento</option>
+            </select>
+            <span class="field-msg"></span>
+          </div>
+          <div class="field">
+            <label class="field-label" for="ds-6">Textarea</label>
+            <textarea class="textarea" id="ds-6" placeholder="Ex.: 1,5 kg de picanha em bifes de 3 cm"></textarea>
+            <span class="field-msg"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cards -->
+    <section class="ds-section" id="cards">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">05 · Cards</span>
+          <h2 class="t-h1">4 modelos</h2>
+        </div>
+        <div class="ds-cards">
+          <div>
+            <p class="t-caption ds-card-label">Produto</p>
+            <article class="card card-feature card-product" data-spotlight>
+              <div class="product-media">
+                <span class="chip chip-red product-badge">Mais pedido</span>
+                <svg class="product-art" aria-hidden="true"><use href="#art-steak"/></svg>
+                <span class="product-index" aria-hidden="true">01</span>
+              </div>
+              <div class="product-body">
+                <span class="t-caption">Bovino · Grelha</span>
+                <h3 class="t-h3">Picanha</h3>
+                <p>Capa de gordura uniforme e o sabor clássico do churrasco.</p>
+                <div class="product-foot">
+                  <span class="product-meta">Peça ou bifes</span>
+                  <button class="btn btn-primary btn-sm" type="button">Pedir</button>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div>
+            <p class="t-caption ds-card-label">Diferencial (gold glow)</p>
+            <article class="card card-feature feature" data-spotlight>
+              <span class="feature-num">01</span>
+              <span class="feature-icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>
+              <h3 class="t-h3">Seleção a dedo</h3>
+              <p>Peças escolhidas uma a uma, olhando marmoreio, cor e frescor.</p>
+            </article>
+          </div>
+          <div>
+            <p class="t-caption ds-card-label">CTA vermelho</p>
+            <article class="card card-cta" style="display:grid;gap:16px;justify-items:start">
+              <span class="chip cta-chip">Kit churrasco</span>
+              <h3 class="t-h2">Monte seu kit em uma mensagem.</h3>
+              <button class="btn btn-gold" type="button">Montar meu kit</button>
+            </article>
+          </div>
+          <div>
+            <p class="t-caption ds-card-label">Base</p>
+            <article class="card" style="display:grid;gap:8px">
+              <span class="t-caption">Card base</span>
+              <h3 class="t-h3">Informação simples</h3>
+              <p style="color:var(--c-texto-2)">Fundo grafite, borda sutil e raio de 16px para agrupar conteúdo.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Estética -->
+    <section class="ds-section" id="estetica">
+      <div class="container">
+        <div class="ds-section-head">
+          <span class="t-caption">06 · Estética</span>
+          <h2 class="t-h1">Raios, sombras e espaçamento</h2>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Border-radius</h3>
+        <div class="ds-panel ds-tokens">
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-0)"></span><strong>0px</strong><span class="ds-code">--r-0</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-xs)"></span><strong>4px</strong><span class="ds-code">--r-xs</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-sm)"></span><strong>8px</strong><span class="ds-code">--r-sm</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-md)"></span><strong>12px</strong><span class="ds-code">--r-md</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-lg)"></span><strong>16px</strong><span class="ds-code">--r-lg</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-xl)"></span><strong>24px</strong><span class="ds-code">--r-xl</span></div>
+          <div class="ds-token"><span class="ds-radius-box" style="border-radius:var(--r-full)"></span><strong>999px</strong><span class="ds-code">--r-full</span></div>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Sombras</h3>
+        <div class="ds-panel ds-tokens ds-shadows">
+          <div class="ds-token"><span class="ds-shadow-box" style="box-shadow:var(--s-sm)"></span><strong>Small</strong><span class="ds-code">--s-sm</span></div>
+          <div class="ds-token"><span class="ds-shadow-box" style="box-shadow:var(--s-md)"></span><strong>Medium</strong><span class="ds-code">--s-md</span></div>
+          <div class="ds-token"><span class="ds-shadow-box" style="box-shadow:var(--s-lg)"></span><strong>Large</strong><span class="ds-code">--s-lg</span></div>
+          <div class="ds-token"><span class="ds-shadow-box" style="box-shadow:var(--s-gold)"></span><strong>Gold Glow</strong><span class="ds-code">--s-gold</span></div>
+          <div class="ds-token"><span class="ds-shadow-box" style="box-shadow:var(--s-red)"></span><strong>Red Glow</strong><span class="ds-code">--s-red</span></div>
+        </div>
+
+        <h3 class="t-h3 ds-group-title">Espaçamento (base 8)</h3>
+        <div class="ds-panel ds-spacing">
+          <div class="ds-space-row"><span class="ds-code">--sp-1</span><strong>4px</strong><span class="ds-space-bar" style="width:4px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-2</span><strong>8px</strong><span class="ds-space-bar" style="width:8px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-3</span><strong>16px</strong><span class="ds-space-bar" style="width:16px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-4</span><strong>24px</strong><span class="ds-space-bar" style="width:24px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-5</span><strong>32px</strong><span class="ds-space-bar" style="width:32px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-6</span><strong>48px</strong><span class="ds-space-bar" style="width:48px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-7</span><strong>64px</strong><span class="ds-space-bar" style="width:64px"></span></div>
+          <div class="ds-space-row"><span class="ds-code">--sp-8</span><strong>96px</strong><span class="ds-space-bar" style="width:96px"></span></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="ds-footer">
+    <div class="container">© <span data-year>2026</span> Casa de Carnes Cruzado · Design System</div>
+  </footer>
+
+  <div class="ds-toast" role="status" aria-live="polite"></div>
+
+  <script>
+    (() => {
+      const toast = document.querySelector(".ds-toast");
+      let timer;
+      document.addEventListener("click", async (e) => {
+        const swatch = e.target.closest("[data-copy]");
+        if (!swatch) return;
+        const value = swatch.dataset.copy;
+        try {
+          await navigator.clipboard.writeText(value);
+          toast.textContent = `${value} copiado`;
+        } catch {
+          toast.textContent = value;
+        }
+        toast.classList.add("is-visible");
+        clearTimeout(timer);
+        timer = setTimeout(() => toast.classList.remove("is-visible"), 1800);
+      });
+    })();
+  </script>
+</body>
+</html>

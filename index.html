@@ -1,0 +1,683 @@
+<!doctype html>
+<html lang="pt-BR" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Casa de Carnes Cruzado — Carne nobre, corte de mestre</title>
+  <meta name="description" content="Casa de Carnes Cruzado: seleção premium de carnes bovinas, suínas, aves e cortes especiais, porcionadas do seu jeito. Peça pelo WhatsApp.">
+  <meta name="theme-color" content="#0D0D0D">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Casa de Carnes Cruzado — Carne nobre, corte de mestre">
+  <meta property="og:description" content="Seleção premium de carnes, corte na hora e pedido direto pelo WhatsApp.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/tokens.css">
+  <link rel="stylesheet" href="assets/css/site.css">
+  <script>document.documentElement.classList.replace("no-js", "js");</script>
+  <script src="assets/js/config.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- ===== Sprite: logo e ilustrações ===== -->
+  <svg class="sprite" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="g-blade" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#F6E875"/>
+        <stop offset=".45" stop-color="#E0CE25"/>
+        <stop offset="1" stop-color="#8F6E00"/>
+      </linearGradient>
+      <linearGradient id="g-handle" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0" stop-color="#FF2A2A"/>
+        <stop offset="1" stop-color="#8A0505"/>
+      </linearGradient>
+      <g id="knife">
+        <path d="M28.5 35V14c0-4 1.5-6 3.5-7 3 4 4.5 13 4.5 28Z" fill="url(#g-blade)"/>
+        <rect x="27.5" y="34.5" width="10" height="3.5" rx="1" fill="#8F6E00"/>
+        <rect x="28.5" y="38" width="8" height="17" rx="2.5" fill="url(#g-handle)"/>
+        <circle cx="32.5" cy="43" r="1" fill="#0D0D0D"/>
+        <circle cx="32.5" cy="50" r="1" fill="#0D0D0D"/>
+      </g>
+    </defs>
+
+    <symbol id="logo-mark" viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="30.5" fill="none" stroke="url(#g-blade)" stroke-width="1.5"/>
+      <use href="#knife" transform="rotate(42 32 32)"/>
+      <use href="#knife" transform="rotate(-42 32 32) translate(64 0) scale(-1 1)"/>
+    </symbol>
+
+    <!-- Ilustrações dos cortes (traço dourado) -->
+    <symbol id="art-steak" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 56c0-20 30-32 64-30 36 2 66 14 68 40 2 24-20 46-54 48-22 1-32-8-48-8-22 0-34-14-32-30 0-8 2-14 2-20Z"/>
+        <path d="M40 56c0-20 30-32 64-30 36 2 66 14 68 40 2 24-20 46-54 48-22 1-32-8-48-8-22 0-34-14-32-30 0-8 2-14 2-20Z" transform="translate(105 70) scale(.84) translate(-105 -70)" opacity=".55"/>
+        <path d="M68 58c6 4 12 6 20 4M112 58c4 6 10 10 18 10M80 80c8 2 14 8 18 14M126 84c4-4 10-6 16-4M60 74c2 4 6 8 10 10" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-ribeye" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 74c-4-30 26-50 62-50 40 0 66 20 64 50-2 28-28 44-62 44-36 0-60-16-64-44Z"/>
+        <path d="M70 72c0-16 16-26 34-26 20 0 34 12 32 28-2 15-16 24-34 24-18 0-32-10-32-26Z" opacity=".75"/>
+        <path d="M52 92c10 10 30 16 52 15M150 58c4 6 6 12 5 20" opacity=".5"/>
+        <path d="M86 62c4 6 10 8 18 6M98 82c6-2 12 2 16 6M116 60c2 4 6 6 10 6" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-tbone" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M28 72c0-28 32-44 72-44s74 16 74 46c0 28-28 44-66 44-40 0-80-16-80-46Z"/>
+        <path d="M46 42c26-10 84-12 112-1l-3 8c-28-9-80-8-106 1Z" fill="currentColor" fill-opacity=".16"/>
+        <path d="M114 43h8l-3 74h-8Z" fill="currentColor" fill-opacity=".16"/>
+        <path d="M50 70c6 2 12 6 16 12M72 94c6-2 12 0 16 4M80 58c6 4 12 4 18 2M134 64c4 4 10 6 16 6M138 92c4-2 8-2 12 0" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-ribs" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="26" y="44" width="148" height="56" rx="18"/>
+        <path d="M54 34v76M84 34v76M114 34v76M144 34v76" opacity=".7"/>
+        <circle cx="54" cy="30" r="4"/><circle cx="84" cy="30" r="4"/><circle cx="114" cy="30" r="4"/><circle cx="144" cy="30" r="4"/>
+        <circle cx="54" cy="114" r="4"/><circle cx="84" cy="114" r="4"/><circle cx="114" cy="114" r="4"/><circle cx="144" cy="114" r="4"/>
+        <path d="M34 60c12-6 24 6 36 0M160 84c-8 4-16-4-24 0" opacity=".4"/>
+      </g>
+    </symbol>
+    <symbol id="art-tomahawk" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M20 80c-2-28 24-48 58-48 32 0 50 18 50 40s-22 38-54 38c-30 0-52-10-54-30Z"/>
+        <path d="M30 74c8-20 26-32 50-32" opacity=".55"/>
+        <rect x="120" y="62" width="56" height="12" rx="6" fill="currentColor" fill-opacity=".14"/>
+        <circle cx="180" cy="61" r="7"/><circle cx="180" cy="75" r="7"/>
+        <path d="M46 86c6 2 12 6 14 12M78 62c6 4 12 6 20 4M86 92c4-4 10-6 16-4" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-layers" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="28" y="36" width="144" height="72" rx="12"/>
+        <path d="M28 56c22-8 42 8 72 0s50 8 72 0M28 76c22 8 42-8 72 0s50-8 72 0M28 92c22-6 42 6 72 0s50 6 72 0" opacity=".6"/>
+      </g>
+    </symbol>
+    <symbol id="art-sausage" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="16" y="72" width="60" height="26" rx="13" transform="rotate(-20 46 85)"/>
+        <rect x="70" y="56" width="60" height="26" rx="13" transform="rotate(2 100 69)"/>
+        <rect x="124" y="62" width="60" height="26" rx="13" transform="rotate(24 154 75)"/>
+        <path d="M74 74l-4 2M128 70l-4-2" stroke-width="3"/>
+        <path d="M34 84c6-3 12-5 18-6M88 66h18M144 72c6 2 11 5 16 9" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-drumstick" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M56 48c16-24 64-26 74 4 6 20-4 34-14 46-12 2-38 0-54-14-14-12-14-24-6-36Z"/>
+        <path d="M116 98l24 18" stroke-width="9" opacity=".25"/>
+        <path d="M116 98l24 18"/>
+        <circle cx="143" cy="124" r="6"/><circle cx="149" cy="113" r="6"/>
+        <path d="M70 54c10-10 28-12 42-6M72 78c8 6 18 8 28 8" opacity=".45"/>
+      </g>
+    </symbol>
+    <symbol id="art-burger" viewBox="0 0 200 140">
+      <g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M40 70c0-26 26-42 60-42s60 16 60 42Z"/>
+        <path d="M36 80q8-6 16 0t16 0 16 0 16 0 16 0 16 0 16 0 16 0"/>
+        <rect x="38" y="86" width="124" height="16" rx="8" fill="currentColor" fill-opacity=".14"/>
+        <path d="M40 108h120v4a12 12 0 0 1-12 12H52a12 12 0 0 1-12-12Z"/>
+        <path d="M76 46l4-2M98 40l4 1M120 48l3 2M88 56l3-1M110 58l4 1" opacity=".6"/>
+      </g>
+    </symbol>
+
+    <!-- Ícones (24px) -->
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20.5l1.6-5.2A8.5 8.5 0 1 1 21 11.5Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5c.3 2.6 2.4 4.7 5 5l1.2-1.2 2 .8-.4 1.8c-4.4.4-8.3-3.5-7.9-7.9l1.8-.4.8 2Z" fill="currentColor"/></symbol>
+    <symbol id="i-award" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="6"/><path d="M8.5 14 7 22l5-3 5 3-1.5-8"/></g></symbol>
+    <symbol id="i-knife" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 3.5 9 15l-2.5-2.5C10.5 8.5 15 4.5 20.5 3.5Z"/><path d="m8 14-4.6 4.6a1.6 1.6 0 0 0 2.3 2.3L10.2 16.4"/></g></symbol>
+    <symbol id="i-flame" viewBox="0 0 24 24"><path d="M12 22c4.4 0 7-3 7-7 0-4.5-3.5-6.5-4.5-10-1.5 2-2.5 3-4 3.5C10.5 6 9.5 4 8 2.5 8 7 5 9 5 15c0 4 2.6 7 7 7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-truck" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6h11v10h-11zM13.5 9.5h4l3 3V16h-7"/><circle cx="6.5" cy="17.5" r="2"/><circle cx="17" cy="17.5" r="2"/></g></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></g></symbol>
+    <symbol id="i-insta" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></g></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12.5 4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader-mark"><use href="#logo-mark"/></svg>
+    <span class="preloader-bar"><span></span></span>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+  <div class="cursor-glow" aria-hidden="true"></div>
+
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- ===== Navegação ===== -->
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a href="#inicio" class="brand" aria-label="Casa de Carnes Cruzado — início">
+        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="brand-name">
+          <strong>CRUZADO</strong>
+          <small>Casa de Carnes</small>
+        </span>
+      </a>
+
+      <nav class="nav-links" aria-label="Principal">
+        <a href="#sobre">Sobre</a>
+        <a href="#diferenciais">Diferenciais</a>
+        <a href="#cortes">Cortes</a>
+        <a href="#como-pedir">Como pedir</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <a class="btn btn-primary btn-sm nav-cta" href="#contato" data-whatsapp>
+        <svg class="btn-icon" aria-hidden="true"><use href="#i-chat"/></svg>
+        Pedir agora
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" aria-label="Abrir menu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="menu-mobile" id="menu-mobile" hidden>
+    <nav aria-label="Menu móvel">
+      <a href="#sobre"><span>01</span>Sobre</a>
+      <a href="#diferenciais"><span>02</span>Diferenciais</a>
+      <a href="#cortes"><span>03</span>Cortes</a>
+      <a href="#como-pedir"><span>04</span>Como pedir</a>
+      <a href="#contato"><span>05</span>Contato</a>
+    </nav>
+    <a class="btn btn-primary btn-lg" href="#contato" data-whatsapp>
+      <svg class="btn-icon" aria-hidden="true"><use href="#i-chat"/></svg>
+      Pedir pelo WhatsApp
+    </a>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="inicio">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="hero-grid"></div>
+        <div class="hero-glow hero-glow--red"></div>
+        <div class="hero-glow hero-glow--gold"></div>
+        <div class="hero-beam"></div>
+        <span class="hero-word">CRUZADO</span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <span class="chip chip-red hero-chip"><span class="dot-live"></span>Açougue premium</span>
+
+          <h1 class="t-display hero-title">
+            <span class="line"><span>Carne nobre.</span></span>
+            <span class="line"><span class="text-fire">Corte de mestre.</span></span>
+          </h1>
+
+          <p class="t-lead hero-lead">
+            Seleção premium de carnes bovinas, suínas, aves e cortes especiais —
+            porcionadas do seu jeito e prontas para a brasa.
+          </p>
+
+          <div class="hero-actions">
+            <a class="btn btn-primary btn-lg btn-pulse" href="#contato" data-whatsapp data-magnetic>
+              Fazer pedido
+              <svg class="btn-icon btn-icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+            <a class="btn btn-outline btn-lg" href="#cortes" data-magnetic>Ver a vitrine</a>
+          </div>
+
+          <ul class="hero-meta" aria-label="Categorias">
+            <li>Bovinos</li>
+            <li>Suínos</li>
+            <li>Aves</li>
+            <li>Especiais</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual">
+          <div class="emblem" data-tilt>
+            <div class="emblem-ring neon"></div>
+            <div class="emblem-disc"></div>
+            <svg class="emblem-text" viewBox="0 0 200 200" aria-hidden="true">
+              <defs>
+                <path id="emblem-circle" d="M100 100m-82 0a82 82 0 1 1 164 0a82 82 0 1 1-164 0"/>
+              </defs>
+              <text>
+                <textPath href="#emblem-circle" textLength="512" lengthAdjust="spacing">CASA DE CARNES CRUZADO • CORTE NA HORA • CARNES NOBRES •</textPath>
+              </text>
+            </svg>
+            <svg class="emblem-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <span class="chip chip-red emblem-chip emblem-chip--1"><span class="dot-live"></span>Corte na hora</span>
+            <span class="chip chip-gold emblem-chip emblem-chip--2">Seleção premium</span>
+            <span class="chip emblem-chip emblem-chip--3">Retirada ou entrega</span>
+          </div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#sobre" aria-label="Rolar para o conteúdo">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== Faixas cruzadas (marquee) ===== -->
+    <section class="cross" aria-label="Cortes em destaque">
+      <div class="cross-band cross-band--red">
+        <div class="marquee-track">
+          <span>Picanha</span><i></i><span>Ancho</span><i></i><span>T-Bone</span><i></i><span>Fraldinha</span><i></i><span>Costela</span><i></i><span>Tomahawk</span><i></i><span>Maminha</span><i></i><span>Cupim</span><i></i>
+          <span aria-hidden="true">Picanha</span><i></i><span aria-hidden="true">Ancho</span><i></i><span aria-hidden="true">T-Bone</span><i></i><span aria-hidden="true">Fraldinha</span><i></i><span aria-hidden="true">Costela</span><i></i><span aria-hidden="true">Tomahawk</span><i></i><span aria-hidden="true">Maminha</span><i></i><span aria-hidden="true">Cupim</span><i></i>
+        </div>
+      </div>
+      <div class="cross-band cross-band--dark" aria-hidden="true">
+        <div class="marquee-track marquee-track--reverse">
+          <span>Corte na hora</span><i></i><span>Seleção premium</span><i></i><span>Pronto para a brasa</span><i></i><span>Do seu jeito</span><i></i>
+          <span>Corte na hora</span><i></i><span>Seleção premium</span><i></i><span>Pronto para a brasa</span><i></i><span>Do seu jeito</span><i></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Manifesto ===== -->
+    <section class="section manifesto" id="sobre">
+      <div class="container">
+        <span class="eyebrow reveal"><span class="eyebrow-line"></span>Sobre a Cruzado</span>
+        <p class="manifesto-text" data-words>
+          Aqui, cada peça é <em class="w-gold">escolhida a dedo</em>, cada corte é feito
+          <em class="w-red">na hora</em> e cada cliente sai com a carne certa para o momento certo.
+          Tradição de açougue de bairro com padrão de <em class="w-gold">casa de carnes premium.</em>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Diferenciais ===== -->
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow reveal"><span class="eyebrow-line"></span>Diferenciais</span>
+          <h2 class="t-h1 reveal">Qualidade que se vê <span class="text-fire">no corte.</span></h2>
+          <p class="t-lead reveal">Do balcão à sua grelha, cada detalhe pensado para entregar sabor, maciez e confiança.</p>
+        </div>
+
+        <div class="features">
+          <article class="card card-feature feature reveal" data-spotlight>
+            <span class="feature-num">01</span>
+            <span class="feature-icon"><svg aria-hidden="true"><use href="#i-award"/></svg></span>
+            <h3 class="t-h3">Seleção a dedo</h3>
+            <p>Peças escolhidas uma a uma, olhando marmoreio, cor e frescor.</p>
+          </article>
+          <article class="card card-feature feature reveal" data-spotlight>
+            <span class="feature-num">02</span>
+            <span class="feature-icon"><svg aria-hidden="true"><use href="#i-knife"/></svg></span>
+            <h3 class="t-h3">Corte sob medida</h3>
+            <p>Espessura, peso e porcionamento do jeito que você pedir.</p>
+          </article>
+          <article class="card card-feature feature reveal" data-spotlight>
+            <span class="feature-num">03</span>
+            <span class="feature-icon"><svg aria-hidden="true"><use href="#i-flame"/></svg></span>
+            <h3 class="t-h3">Pronto para a brasa</h3>
+            <p>Cortes para churrasco, grelha e dia a dia, com dica de preparo.</p>
+          </article>
+          <article class="card card-feature feature reveal" data-spotlight>
+            <span class="feature-num">04</span>
+            <span class="feature-icon"><svg aria-hidden="true"><use href="#i-truck"/></svg></span>
+            <h3 class="t-h3">Retirada ou entrega</h3>
+            <p>Peça pelo WhatsApp e escolha: retira na loja ou recebe em casa.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Vitrine de cortes ===== -->
+    <section class="section showcase" id="cortes">
+      <div class="container">
+        <div class="showcase-head">
+          <div class="section-head">
+            <span class="eyebrow reveal"><span class="eyebrow-line"></span>Vitrine</span>
+            <h2 class="t-h1 reveal">Os cortes da casa.</h2>
+            <p class="t-lead reveal">Escolha o corte e chame no WhatsApp — a gente separa e porciona na hora.</p>
+          </div>
+
+          <div class="filters reveal" role="group" aria-label="Filtrar cortes">
+            <span class="filters-indicator" aria-hidden="true"></span>
+            <button type="button" class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
+            <button type="button" class="filter" data-filter="bovinos" aria-pressed="false">Bovinos</button>
+            <button type="button" class="filter" data-filter="suinos" aria-pressed="false">Suínos</button>
+            <button type="button" class="filter" data-filter="aves" aria-pressed="false">Aves</button>
+            <button type="button" class="filter" data-filter="especiais" aria-pressed="false">Especiais</button>
+          </div>
+        </div>
+
+        <div class="products" data-products>
+          <article class="card card-feature card-product reveal" data-cat="bovinos" data-spotlight>
+            <div class="product-media">
+              <span class="chip chip-red product-badge">Mais pedido</span>
+              <svg class="product-art" aria-hidden="true"><use href="#art-steak"/></svg>
+              <span class="product-index" aria-hidden="true">01</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Bovino · Grelha</span>
+              <h3 class="t-h3">Picanha</h3>
+              <p>Capa de gordura uniforme, maciez e o sabor clássico do churrasco.</p>
+              <div class="product-foot">
+                <span class="product-meta">Peça inteira ou bifes</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Picanha.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="bovinos" data-spotlight>
+            <div class="product-media product-media--alt">
+              <svg class="product-art" aria-hidden="true"><use href="#art-ribeye"/></svg>
+              <span class="product-index" aria-hidden="true">02</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Bovino · Grelha</span>
+              <h3 class="t-h3">Bife Ancho</h3>
+              <p>Do miolo do contrafilé, bem marmorizado e extremamente suculento.</p>
+              <div class="product-foot">
+                <span class="product-meta">Espessura sob medida</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Bife Ancho.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="bovinos" data-spotlight>
+            <div class="product-media">
+              <span class="chip chip-gold product-badge">Premium</span>
+              <svg class="product-art" aria-hidden="true"><use href="#art-tbone"/></svg>
+              <span class="product-index" aria-hidden="true">03</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Bovino · Brasa</span>
+              <h3 class="t-h3">T-Bone</h3>
+              <p>Contrafilé e filé mignon no mesmo corte, separados pelo osso em T.</p>
+              <div class="product-foot">
+                <span class="product-meta">Corte grosso</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir T-Bone.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="bovinos" data-spotlight>
+            <div class="product-media product-media--alt">
+              <svg class="product-art" aria-hidden="true"><use href="#art-ribs"/></svg>
+              <span class="product-index" aria-hidden="true">04</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Bovino · Fogo lento</span>
+              <h3 class="t-h3">Costela</h3>
+              <p>Para assar devagar até desmanchar — ripa, janela ou minga.</p>
+              <div class="product-foot">
+                <span class="product-meta">Corte em tiras ou peça</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Costela.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="especiais" data-spotlight>
+            <div class="product-media">
+              <span class="chip chip-gold product-badge">Especial</span>
+              <svg class="product-art" aria-hidden="true"><use href="#art-tomahawk"/></svg>
+              <span class="product-index" aria-hidden="true">05</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Especial · Brasa</span>
+              <h3 class="t-h3">Tomahawk</h3>
+              <p>Bife ancho com osso longo: imponente, suculento e feito para impressionar.</p>
+              <div class="product-foot">
+                <span class="product-meta">Sob encomenda</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero encomendar Tomahawk.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="suinos" data-spotlight>
+            <div class="product-media product-media--alt">
+              <svg class="product-art" aria-hidden="true"><use href="#art-layers"/></svg>
+              <span class="product-index" aria-hidden="true">06</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Suíno · Brasa</span>
+              <h3 class="t-h3">Panceta</h3>
+              <p>Camadas de carne e gordura que ficam crocantes por fora e macias por dentro.</p>
+              <div class="product-foot">
+                <span class="product-meta">Peça ou em cubos</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Panceta.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="suinos" data-spotlight>
+            <div class="product-media">
+              <svg class="product-art" aria-hidden="true"><use href="#art-sausage"/></svg>
+              <span class="product-index" aria-hidden="true">07</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Suíno · Grelha</span>
+              <h3 class="t-h3">Linguiça Toscana</h3>
+              <p>A entrada que não pode faltar no churrasco, temperada na medida.</p>
+              <div class="product-foot">
+                <span class="product-meta">Por quilo</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Linguiça Toscana.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="aves" data-spotlight>
+            <div class="product-media product-media--alt">
+              <svg class="product-art" aria-hidden="true"><use href="#art-drumstick"/></svg>
+              <span class="product-index" aria-hidden="true">08</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Aves · Grelha</span>
+              <h3 class="t-h3">Coxa e Sobrecoxa</h3>
+              <p>Suculenta e versátil — vai bem na brasa, no forno ou na panela.</p>
+              <div class="product-foot">
+                <span class="product-meta">Com ou sem osso</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Coxa e Sobrecoxa.">Pedir</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="card card-feature card-product reveal" data-cat="especiais" data-spotlight>
+            <div class="product-media">
+              <svg class="product-art" aria-hidden="true"><use href="#art-burger"/></svg>
+              <span class="product-index" aria-hidden="true">09</span>
+            </div>
+            <div class="product-body">
+              <span class="t-caption">Especial · Chapa</span>
+              <h3 class="t-h3">Blend de Hambúrguer</h3>
+              <p>Moído na hora, na proporção de gordura ideal para um burger suculento.</p>
+              <div class="product-foot">
+                <span class="product-meta">Moído ou modelado</span>
+                <a class="btn btn-primary btn-sm" href="#contato" data-whatsapp data-msg="Olá, Casa de Carnes Cruzado! Quero pedir Blend de Hambúrguer.">Pedir</a>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="products-empty" hidden>Nenhum corte nesta categoria por enquanto.</p>
+      </div>
+    </section>
+
+    <!-- ===== Como pedir ===== -->
+    <section class="section" id="como-pedir">
+      <div class="container">
+        <div class="section-head section-head--center">
+          <span class="eyebrow reveal"><span class="eyebrow-line"></span>Como pedir<span class="eyebrow-line"></span></span>
+          <h2 class="t-h1 reveal">Do balcão para a sua <span class="text-fire">brasa.</span></h2>
+        </div>
+
+        <ol class="steps" data-steps>
+          <li class="step">
+            <span class="step-num">01</span>
+            <h3 class="t-h3">Escolha</h3>
+            <p>Navegue pela vitrine e escolha seus cortes favoritos.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">02</span>
+            <h3 class="t-h3">Chame no WhatsApp</h3>
+            <p>Diga o corte, o peso e a espessura que você prefere.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">03</span>
+            <h3 class="t-h3">Corte na hora</h3>
+            <p>Seu pedido é separado, porcionado e embalado na hora.</p>
+          </li>
+          <li class="step">
+            <span class="step-num">04</span>
+            <h3 class="t-h3">Retire ou receba</h3>
+            <p>Busque na loja ou combine a entrega no seu endereço.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== CTA Kit churrasco ===== -->
+    <section class="section section--tight">
+      <div class="container">
+        <div class="card card-cta cta-block reveal">
+          <svg class="cta-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+          <div class="cta-copy">
+            <span class="chip cta-chip">Kit churrasco</span>
+            <h2 class="t-display">Monte seu kit<br>em uma mensagem.</h2>
+            <p>Diga quantas pessoas vão e o estilo do churrasco. A gente sugere os cortes e separa tudo para você.</p>
+          </div>
+
+          <div class="cta-calc">
+            <label class="cta-calc-label" for="pessoas">Quantas pessoas?</label>
+            <div class="cta-calc-row">
+              <input class="range" id="pessoas" type="range" min="2" max="50" value="10" step="1">
+              <output class="cta-calc-people" for="pessoas"><strong data-people>10</strong> pessoas</output>
+            </div>
+            <p class="cta-calc-result">Sugestão: <strong data-kg>4,0 kg</strong> de carne <span>(≈ <span data-gpp>400</span> g por pessoa)</span></p>
+            <a class="btn btn-gold btn-lg" href="#contato" data-whatsapp data-kit data-magnetic>
+              Montar meu kit
+              <svg class="btn-icon btn-icon--arrow" aria-hidden="true"><use href="#i-arrow"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contato ===== -->
+    <section class="section contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <div class="section-head">
+            <span class="eyebrow reveal"><span class="eyebrow-line"></span>Contato</span>
+            <h2 class="t-h1 reveal">Seu próximo churrasco <span class="text-fire">começa aqui.</span></h2>
+            <p class="t-lead reveal">Faça seu pedido pelo WhatsApp ou venha escolher sua carne no balcão.</p>
+          </div>
+
+          <ul class="info-list">
+            <li class="info-item reveal">
+              <span class="info-icon"><svg aria-hidden="true"><use href="#i-pin"/></svg></span>
+              <div>
+                <span class="t-caption">Endereço</span>
+                <strong data-config="endereco">Rua Exemplo, 123 — Centro</strong>
+                <span class="info-sub" data-config="cidade">Sua cidade — UF</span>
+                <a class="info-link" href="#" data-maps target="_blank" rel="noopener">Abrir no mapa <svg aria-hidden="true"><use href="#i-arrow"/></svg></a>
+              </div>
+            </li>
+            <li class="info-item reveal">
+              <span class="info-icon"><svg aria-hidden="true"><use href="#i-clock"/></svg></span>
+              <div>
+                <span class="t-caption">Horário</span>
+                <dl class="hours" data-hours>
+                  <div><dt>Seg a Sex</dt><dd>08h às 19h</dd></div>
+                  <div><dt>Sábado</dt><dd>08h às 18h</dd></div>
+                  <div><dt>Domingo</dt><dd>08h às 12h</dd></div>
+                </dl>
+              </div>
+            </li>
+            <li class="info-item reveal">
+              <span class="info-icon"><svg aria-hidden="true"><use href="#i-chat"/></svg></span>
+              <div>
+                <span class="t-caption">WhatsApp</span>
+                <a class="info-strong" href="#contato" data-whatsapp data-config="whatsappLabel">(00) 00000-0000</a>
+              </div>
+            </li>
+            <li class="info-item reveal" data-instagram hidden>
+              <span class="info-icon"><svg aria-hidden="true"><use href="#i-insta"/></svg></span>
+              <div>
+                <span class="t-caption">Instagram</span>
+                <a class="info-strong" href="#" target="_blank" rel="noopener" data-instagram-link></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="contact-form-wrap neon reveal">
+        <form class="card contact-form" data-order-form novalidate>
+          <div class="form-head">
+            <h3 class="t-h3">Faça seu pedido</h3>
+            <p>Preencha e envie direto pelo WhatsApp.</p>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="f-nome">Nome</label>
+            <input class="input" id="f-nome" name="nome" type="text" autocomplete="name" placeholder="Como podemos te chamar?" required>
+            <span class="field-msg" data-msg-for="nome"></span>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="f-tel">WhatsApp</label>
+            <input class="input" id="f-tel" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000" required>
+            <span class="field-msg" data-msg-for="telefone"></span>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="f-tipo">Tipo de pedido</label>
+            <select class="select" id="f-tipo" name="tipo">
+              <option>Retirada na loja</option>
+              <option>Entrega</option>
+              <option>Encomenda para evento</option>
+            </select>
+            <span class="field-msg"></span>
+          </div>
+
+          <div class="field">
+            <label class="field-label" for="f-pedido">Seu pedido</label>
+            <textarea class="textarea" id="f-pedido" name="pedido" rows="4" placeholder="Ex.: 1,5 kg de picanha em bifes de 3 cm e 1 kg de linguiça toscana" required></textarea>
+            <span class="field-msg" data-msg-for="pedido"></span>
+          </div>
+
+          <button class="btn btn-primary btn-lg btn-block" type="submit">
+            <svg class="btn-icon" aria-hidden="true"><use href="#i-chat"/></svg>
+            <span data-submit-label>Enviar pelo WhatsApp</span>
+          </button>
+          <p class="form-note">Abrimos o WhatsApp com sua mensagem pronta — é só enviar.</p>
+        </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Rodapé ===== -->
+  <footer class="footer">
+    <div class="container footer-top">
+      <a href="#inicio" class="brand" aria-label="Casa de Carnes Cruzado — voltar ao topo">
+        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <span class="brand-name">
+          <strong>CRUZADO</strong>
+          <small>Casa de Carnes</small>
+        </span>
+      </a>
+      <nav class="footer-links" aria-label="Rodapé">
+        <a href="#sobre">Sobre</a>
+        <a href="#cortes">Cortes</a>
+        <a href="#como-pedir">Como pedir</a>
+        <a href="#contato">Contato</a>
+        <a href="design-system.html">Design System</a>
+      </nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Casa de Carnes Cruzado. Todos os direitos reservados.</span>
+      <span>Carne nobre, corte de mestre.</span>
+    </div>
+    <div class="footer-word" aria-hidden="true">CRUZADO</div>
+  </footer>
+
+  <a class="wa-float" href="#contato" data-whatsapp aria-label="Pedir pelo WhatsApp">
+    <svg aria-hidden="true"><use href="#i-chat"/></svg>
+  </a>
+</body>
+</html>
