@@ -61,7 +61,19 @@ Coloque a foto em `assets/img/` e adicione dentro de `.product-media`:
 
 A foto ocupa o card e a ilustração dourada some automaticamente.
 
-### 4. Cores e tipografia — `assets/css/tokens.css`
+### 4. Logo
+
+| Arquivo | Uso |
+| --- | --- |
+| `assets/img/logo-cruzado.webp` | selo grande (topo do site, preloader) |
+| `assets/img/logo-cruzado-2x.webp` | selo pequeno (menu, rodapé, card do kit) |
+| `assets/img/favicon-32.png`, `favicon-64.png`, `apple-touch-icon.png` | ícone (boi com faca e cutelo) |
+| `assets/img/og-cruzado.jpg` | imagem ao compartilhar o link (WhatsApp, Instagram, Facebook) |
+
+Os arquivos foram recortados da arte da paleta. Se tiver a logo original em alta resolução
+(PNG com fundo transparente ou SVG), substitua os dois `.webp` mantendo os mesmos nomes.
+
+### 5. Cores e tipografia — `assets/css/tokens.css`
 
 Todos os tokens do Design System estão em variáveis CSS no início do arquivo
 (`--c-vermelho`, `--g-ouro`, `--fs-display`, `--r-lg`, `--s-red`, `--sp-4`, ...).
@@ -94,5 +106,5 @@ assets/
   js/config.js            dados da loja
   js/main.js              animações e interações
   fonts/                  Montserrat (variável, licença OFL)
-  img/favicon.svg
+  img/                    logo, favicons e imagem de compartilhamento
 ```

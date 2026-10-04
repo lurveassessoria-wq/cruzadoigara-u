@@ -30,9 +30,9 @@
   gap: 12px;
   text-decoration: none;
 }
-.ds-brand svg {
-  width: 36px;
-  height: 36px;
+.ds-brand img {
+  width: auto;
+  height: 44px;
 }
 .ds-brand strong {
   display: block;
@@ -104,6 +104,54 @@
 }
 .ds-group-title:first-of-type {
   margin-top: 0;
+}
+
+/* Logo */
+.ds-logos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--sp-4);
+}
+.ds-logo-tile {
+  display: grid;
+  justify-items: center;
+  align-content: center;
+  gap: var(--sp-4);
+  min-height: 340px;
+  margin: 0;
+  padding: var(--sp-5);
+  border: 1px solid var(--c-grafite-700);
+  border-radius: var(--r-xl);
+  background: radial-gradient(circle at 50% 35%, rgba(225, 13, 13, 0.18), transparent 60%), var(--c-preto);
+  text-align: center;
+}
+.ds-logo-tile img {
+  width: 180px;
+  height: auto;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6));
+}
+.ds-logo-tile--red {
+  border-color: rgba(255, 80, 80, 0.4);
+  background: var(--g-vermelho);
+  box-shadow: var(--s-red);
+}
+.ds-logo-tile--red img {
+  filter: drop-shadow(0 16px 30px rgba(0, 0, 0, 0.55));
+}
+.ds-logo-tile--neon {
+  background: var(--c-grafite-950);
+}
+.ds-logo-tile .ds-logo-icon {
+  width: 120px;
+  border-radius: 28px;
+  box-shadow: var(--s-gold);
+}
+.ds-logo-tile figcaption {
+  display: grid;
+  gap: 2px;
+}
+.ds-logo-tile figcaption strong {
+  font-size: 0.9375rem;
 }
 
 /* Cores */

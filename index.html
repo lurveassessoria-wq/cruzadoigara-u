@@ -10,7 +10,14 @@
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Casa de Carnes Cruzado — Carne nobre, corte de mestre">
   <meta property="og:description" content="Seleção premium de carnes, corte na hora e pedido direto pelo WhatsApp.">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <meta property="og:image" content="https://lurveassessoria-wq.github.io/cruzadoigara-u/assets/img/og-cruzado.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/img/favicon-64.png" type="image/png" sizes="64x64">
+  <link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+  <link rel="preload" href="assets/img/logo-cruzado.webp" as="image" type="image/webp">
   <link rel="preload" href="assets/fonts/montserrat-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/css/tokens.css">
   <link rel="stylesheet" href="assets/css/site.css">
@@ -20,32 +27,8 @@
 </head>
 <body>
 
-  <!-- ===== Sprite: logo e ilustrações ===== -->
+  <!-- ===== Sprite: ícones e ilustrações ===== -->
   <svg class="sprite" aria-hidden="true" focusable="false">
-    <defs>
-      <linearGradient id="g-blade" x1="0" y1="0" x2="1" y2="1">
-        <stop offset="0" stop-color="#F6E875"/>
-        <stop offset=".45" stop-color="#E0CE25"/>
-        <stop offset="1" stop-color="#8F6E00"/>
-      </linearGradient>
-      <linearGradient id="g-handle" x1="0" y1="0" x2="0" y2="1">
-        <stop offset="0" stop-color="#FF2A2A"/>
-        <stop offset="1" stop-color="#8A0505"/>
-      </linearGradient>
-      <g id="knife">
-        <path d="M28.5 35V14c0-4 1.5-6 3.5-7 3 4 4.5 13 4.5 28Z" fill="url(#g-blade)"/>
-        <rect x="27.5" y="34.5" width="10" height="3.5" rx="1" fill="#8F6E00"/>
-        <rect x="28.5" y="38" width="8" height="17" rx="2.5" fill="url(#g-handle)"/>
-        <circle cx="32.5" cy="43" r="1" fill="#0D0D0D"/>
-        <circle cx="32.5" cy="50" r="1" fill="#0D0D0D"/>
-      </g>
-    </defs>
-
-    <symbol id="logo-mark" viewBox="0 0 64 64">
-      <circle cx="32" cy="32" r="30.5" fill="none" stroke="url(#g-blade)" stroke-width="1.5"/>
-      <use href="#knife" transform="rotate(42 32 32)"/>
-      <use href="#knife" transform="rotate(-42 32 32) translate(64 0) scale(-1 1)"/>
-    </symbol>
 
     <!-- Ilustrações dos cortes (traço dourado) -->
     <symbol id="art-steak" viewBox="0 0 200 140">
@@ -138,7 +121,7 @@
 
   <!-- ===== Preloader ===== -->
   <div class="preloader" aria-hidden="true">
-    <svg class="preloader-mark"><use href="#logo-mark"/></svg>
+    <img class="preloader-logo" src="assets/img/logo-cruzado.webp" alt="" width="236" height="250">
     <span class="preloader-bar"><span></span></span>
   </div>
 
@@ -151,7 +134,7 @@
   <header class="nav" data-nav>
     <div class="container nav-inner">
       <a href="#inicio" class="brand" aria-label="Casa de Carnes Cruzado — início">
-        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <img class="brand-logo" src="assets/img/logo-cruzado-2x.webp" alt="" width="236" height="250">
         <span class="brand-name">
           <strong>CRUZADO</strong>
           <small>Casa de Carnes</small>
@@ -205,7 +188,7 @@
 
       <div class="container hero-inner">
         <div class="hero-copy">
-          <span class="chip chip-red hero-chip"><span class="dot-live"></span>Açougue premium</span>
+          <span class="chip chip-red hero-chip"><span class="dot-live"></span>Casa de carnes · desde 2025</span>
 
           <h1 class="t-display hero-title">
             <span class="line"><span>Carne nobre.</span></span>
@@ -242,10 +225,10 @@
                 <path id="emblem-circle" d="M100 100m-82 0a82 82 0 1 1 164 0a82 82 0 1 1-164 0"/>
               </defs>
               <text>
-                <textPath href="#emblem-circle" textLength="512" lengthAdjust="spacing">CASA DE CARNES CRUZADO • CORTE NA HORA • CARNES NOBRES •</textPath>
+                <textPath href="#emblem-circle" textLength="512" lengthAdjust="spacing">CASA DE CARNES CRUZADO • DESDE 2025 • CORTE NA HORA •</textPath>
               </text>
             </svg>
-            <svg class="emblem-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+            <img class="emblem-logo" src="assets/img/logo-cruzado.webp" alt="Logo da Casa de Carnes Cruzado" width="236" height="250">
             <span class="chip chip-red emblem-chip emblem-chip--1"><span class="dot-live"></span>Corte na hora</span>
             <span class="chip chip-gold emblem-chip emblem-chip--2">Seleção premium</span>
             <span class="chip emblem-chip emblem-chip--3">Retirada ou entrega</span>
@@ -534,10 +517,10 @@
     <section class="section section--tight">
       <div class="container">
         <div class="card card-cta cta-block reveal">
-          <svg class="cta-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+          <img class="cta-mark" src="assets/img/logo-cruzado-2x.webp" alt="" width="236" height="250">
           <div class="cta-copy">
             <span class="chip cta-chip">Kit churrasco</span>
-            <h2 class="t-display">Monte seu kit<br>em uma mensagem.</h2>
+            <h2 class="t-display">Monte seu kit <br>em uma mensagem.</h2>
             <p>Diga quantas pessoas vão e o estilo do churrasco. A gente sugere os cortes e separa tudo para você.</p>
           </div>
 
@@ -655,7 +638,7 @@
   <footer class="footer">
     <div class="container footer-top">
       <a href="#inicio" class="brand" aria-label="Casa de Carnes Cruzado — voltar ao topo">
-        <svg class="brand-mark" aria-hidden="true"><use href="#logo-mark"/></svg>
+        <img class="brand-logo" src="assets/img/logo-cruzado-2x.webp" alt="" width="236" height="250">
         <span class="brand-name">
           <strong>CRUZADO</strong>
           <small>Casa de Carnes</small>
