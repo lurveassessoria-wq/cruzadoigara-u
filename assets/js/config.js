@@ -12,8 +12,8 @@ window.CRUZADO = {
 
   // [dia, horário]
   horarios: [
-    ["Seg a Sex", "09h às 19h"],
-    ["Sábado", "09h às 12h"],
+    ["Seg a Sáb", "09h às 19h"],
+    ["Domingo", "09h às 12h"],
   ],
 
   // Usuário do Instagram sem @ (deixe vazio para esconder)
