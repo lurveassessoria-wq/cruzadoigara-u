@@ -3,9 +3,9 @@
    ========================================================================== */
 window.CRUZADO = {
   // WhatsApp com DDI + DDD + número, só dígitos (ex.: 5511999998888)
-  whatsapp: "5500000000000",
+  whatsapp: "5514920049503",
   // Como o número aparece no site
-  whatsappLabel: "(00) 00000-0000",
+  whatsappLabel: "(14) 92004-9503",
 
   endereco: "Rua Exemplo, 123 — Centro",
   cidade: "Sua cidade — UF",
